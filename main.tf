@@ -1,4 +1,5 @@
-resource "aws_s3_bucket" "the_bucket" {
-  # ...
-}
 
+resource "aws_instance" "web" {
+    ami = "ami-e99c918a"
+    instance_type = "t1.micro"
+}
